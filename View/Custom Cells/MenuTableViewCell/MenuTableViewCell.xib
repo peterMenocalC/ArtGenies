@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MenuTableViewCell" id="rQf-3o-0Kg" customClass="MenuTableViewCell" customModule="ArtGenies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rQf-3o-0Kg" id="RSC-gE-Eb9">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h18-en-imu">
+                        <rect key="frame" x="0.0" y="3" width="320" height="53.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwr-mR-P8W">
+                                <rect key="frame" x="12" y="16.5" width="296" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Nwr-mR-P8W" secondAttribute="trailing" constant="12" id="3Kq-s1-yke"/>
+                            <constraint firstItem="Nwr-mR-P8W" firstAttribute="centerX" secondItem="h18-en-imu" secondAttribute="centerX" id="OH0-bt-IEQ"/>
+                            <constraint firstItem="Nwr-mR-P8W" firstAttribute="leading" secondItem="h18-en-imu" secondAttribute="leading" constant="12" id="U0P-MK-udW"/>
+                            <constraint firstItem="Nwr-mR-P8W" firstAttribute="centerY" secondItem="h18-en-imu" secondAttribute="centerY" id="YcF-0g-PzD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="h18-en-imu" firstAttribute="centerX" secondItem="RSC-gE-Eb9" secondAttribute="centerX" id="P3d-f6-tKG"/>
+                    <constraint firstItem="h18-en-imu" firstAttribute="top" secondItem="RSC-gE-Eb9" secondAttribute="top" constant="3" id="ZNW-kB-oYT"/>
+                    <constraint firstAttribute="bottom" secondItem="h18-en-imu" secondAttribute="bottom" constant="3" id="cCJ-Qd-ezS"/>
+                    <constraint firstItem="h18-en-imu" firstAttribute="width" secondItem="RSC-gE-Eb9" secondAttribute="width" id="wBt-RO-Ip0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="ZvB-9A-4xO"/>
+            <connections>
+                <outlet property="menuBgview" destination="h18-en-imu" id="W7y-MG-PxE"/>
+                <outlet property="menuLbl" destination="Nwr-mR-P8W" id="vIa-BD-fKp"/>
+            </connections>
+            <point key="canvasLocation" x="33.600000000000001" y="52.173913043478265"/>
+        </tableViewCell>
+    </objects>
+</document>

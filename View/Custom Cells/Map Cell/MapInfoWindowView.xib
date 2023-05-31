@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MapInfoWindow" customModule="ArtGenies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TxA-si-f2c">
+                    <rect key="frame" x="0.0" y="0.0" width="230" height="70"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oAQ-M9-z6A">
+                            <rect key="frame" x="5" y="5" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="QBR-VI-dGc"/>
+                                <constraint firstAttribute="height" constant="60" id="okT-ml-Tjn"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Galery Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQd-sS-cgg">
+                            <rect key="frame" x="73" y="8" width="152" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Galery Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMI-Da-WUn">
+                            <rect key="frame" x="73" y="37" width="152" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="oAQ-M9-z6A" firstAttribute="leading" secondItem="TxA-si-f2c" secondAttribute="leading" constant="5" id="5GZ-ch-2gP"/>
+                        <constraint firstAttribute="bottom" secondItem="oAQ-M9-z6A" secondAttribute="bottom" constant="5" id="5fw-7j-UJM"/>
+                        <constraint firstItem="hMI-Da-WUn" firstAttribute="trailing" secondItem="uQd-sS-cgg" secondAttribute="trailing" id="EeW-Gh-JxA"/>
+                        <constraint firstItem="uQd-sS-cgg" firstAttribute="centerY" secondItem="oAQ-M9-z6A" secondAttribute="centerY" multiplier="0.5" id="Fux-gm-1jh"/>
+                        <constraint firstItem="hMI-Da-WUn" firstAttribute="leading" secondItem="uQd-sS-cgg" secondAttribute="leading" id="HeY-8d-ep3"/>
+                        <constraint firstItem="hMI-Da-WUn" firstAttribute="top" secondItem="uQd-sS-cgg" secondAttribute="bottom" constant="9.5" id="Lej-8z-CaO"/>
+                        <constraint firstItem="uQd-sS-cgg" firstAttribute="leading" secondItem="oAQ-M9-z6A" secondAttribute="trailing" constant="8" id="Pbj-H0-WoC"/>
+                        <constraint firstAttribute="trailing" secondItem="uQd-sS-cgg" secondAttribute="trailing" constant="5" id="Vua-jg-1TT"/>
+                        <constraint firstItem="oAQ-M9-z6A" firstAttribute="top" secondItem="TxA-si-f2c" secondAttribute="top" constant="5" id="qBS-zk-gu9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TxA-si-f2c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7AR-R5-i52"/>
+                <constraint firstAttribute="trailing" secondItem="TxA-si-f2c" secondAttribute="trailing" id="dYF-G4-GJZ"/>
+                <constraint firstItem="TxA-si-f2c" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hXJ-rf-zPx"/>
+                <constraint firstAttribute="bottom" secondItem="TxA-si-f2c" secondAttribute="bottom" id="sX3-ja-6Va"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mapImage" destination="oAQ-M9-z6A" id="nhm-hm-Xlb"/>
+                <outlet property="mapname" destination="uQd-sS-cgg" id="cuF-28-Bch"/>
+                <outlet property="mapstatus" destination="hMI-Da-WUn" id="EZ1-Ck-XZz"/>
+            </connections>
+            <point key="canvasLocation" x="312" y="-18.890554722638683"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleAspectFit" restorationIdentifier="OptionTableViewCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="CustomPopListTableViewCell" id="f66-gB-dd6" customClass="CustomPopListTableViewCell" customModule="ArtGenies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f66-gB-dd6" id="uk4-or-rUL">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6D-Wz-9aX">
+                        <rect key="frame" x="5" y="10" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="bpQ-tB-qAQ"/>
+                            <constraint firstAttribute="width" constant="50" id="rdh-g3-rzM"/>
+                            <constraint firstAttribute="width" secondItem="o6D-Wz-9aX" secondAttribute="height" multiplier="1:1" id="xuv-wH-I7U"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frJ-sI-i0b">
+                        <rect key="frame" x="67" y="26" width="243" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                        </variation>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="frJ-sI-i0b" secondAttribute="bottom" constant="25.5" id="LKh-go-Yvs"/>
+                    <constraint firstItem="o6D-Wz-9aX" firstAttribute="leading" secondItem="uk4-or-rUL" secondAttribute="leading" constant="5" id="P9p-eU-CS4"/>
+                    <constraint firstAttribute="trailing" secondItem="frJ-sI-i0b" secondAttribute="trailing" constant="10" id="ZAK-JI-fi8"/>
+                    <constraint firstItem="frJ-sI-i0b" firstAttribute="leading" secondItem="o6D-Wz-9aX" secondAttribute="trailing" constant="12" id="a6N-ft-bhp"/>
+                    <constraint firstItem="o6D-Wz-9aX" firstAttribute="top" secondItem="uk4-or-rUL" secondAttribute="top" constant="10" id="cXs-za-t8V"/>
+                    <constraint firstItem="frJ-sI-i0b" firstAttribute="centerY" secondItem="o6D-Wz-9aX" secondAttribute="centerY" id="exg-s1-ip7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="Ppc-2L-feJ"/>
+            <connections>
+                <outlet property="nameLbl" destination="frJ-sI-i0b" id="Ypm-HB-1JQ"/>
+                <outlet property="srNumber" destination="o6D-Wz-9aX" id="OI5-Up-yVx"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
